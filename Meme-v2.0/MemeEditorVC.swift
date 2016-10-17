@@ -57,7 +57,6 @@ class MemeEditorVC: UIViewController, UIImagePickerControllerDelegate, UINavigat
             imagePickerView.image = image
             self.dismiss(animated: true, completion: nil) //Dismiss the selection list
             shareButton.isEnabled = true //Enabled share button to share Meme
-            cancelButton.isEnabled = true //Enabled cancel button to cancel Meme created
             
         }
         
@@ -179,10 +178,7 @@ class MemeEditorVC: UIViewController, UIImagePickerControllerDelegate, UINavigat
     
     //Cancel Meme generated
     @IBAction func cancelMeme(_ sender: AnyObject) {
-        imagePickerView.image = nil
-        shareButton.isEnabled = false
-        cancelButton.isEnabled = false
-        viewDidLoad()
+        self.dismiss(animated: true, completion: nil)
         
     }
     
