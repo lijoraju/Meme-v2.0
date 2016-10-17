@@ -6,4 +6,10 @@
 //  Copyright © 2016 LIJORAJU. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class SentMemesCollectionViewCell:UICollectionViewCell {
+    
+    @IBOutlet weak var memeImage: UIImageView! //Reference outlet for UIImage in each cell of collection view
+
+}
