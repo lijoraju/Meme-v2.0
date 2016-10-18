@@ -28,7 +28,7 @@ class SentMemesCollectionVC:UICollectionViewController {
         super.viewDidLoad()
         let space:CGFloat = 3.0
         let dimension1 = (view.frame.size.width - (5 * space)) / 3.0
-        let dimension2 = (view.frame.size.height - (5 * space)) / 7.0
+        let dimension2 = (view.frame.size.height - (5 * space)) / 3.0
         flowLayout.minimumInteritemSpacing = space
         flowLayout.itemSize = CGSize(width:dimension1,height:dimension2)
         
